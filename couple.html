@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mobile Shop - Bootstrap Grid</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  .carousel-item {
+    height: 80vh;
+    background: transparent; /* no black bars */
+  }
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* fills screen */
+    object-position: center;
+  }
+.profile-slider .carousel-item {
+  height:700px;                 /* not full screen */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f5;           /* light background instead of black */
+}
+
+.profile-slider .carousel-item img {
+  max-width: 100%;
+  max-height: 100%;
+  
+  object-fit: contain;           /* show full photo */
+}
+
+</style>
+
+</head>
+<body>
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger p-0">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><h4>VivahSetu</h4></a> 
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="adminlogin.html">Admin</a>
+        </li>
+         <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle text-white" href="service.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Service</a>
+     <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="service.html">Features</a></li>
+
+    <li><a class="dropdown-item" href="#">Membership Options</a></li>
+    <li><a class="dropdown-item" href="#">VivahSetu Premier</a></li>
+    </ul>
+</li>
+
+        <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Explore
+    
+  </a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="privacy.html">Privacy policy</a></li>
+    <li><a class="dropdown-item" href="terms.html">Terms of use</a></li>
+      </ul>
+</li>
+</ul>
+
+              <div class="d-flex align-items-center gap-2">
+
+        
+        <a href="loginform.html" class="btn btn-outline-light">Log-in</a>
+        <a href="register.html" class="btn btn-outline-light">Register</a>
+
+                <div class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle p-0" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="shreya.jpg" alt="profile" width="50" height="50" class="rounded-circle border border-white">
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="profile.php">Profile</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item text-danger" href="logout.php">Sign out</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="text-center">
+<div class="shadow p-3 mb-2 bg-body-tertairy rounded">
+<h7 class="display-6 fst-italic"><img src="cup50.png" alt="My Image"> Real Stories,True Connecetions <img src="cup50.png" alt="My Image"></h7>
+<p class="text">This is where we celebrate VivahSetu Success Stories.</p>
+</div>
+</div>
+
+<div class="container mt-2">
+<div class="shadow p-4 mb-2 bg-body-tertiary rounded">
+<div class="row">
+
+<div class="card" style="width:15rem;">
+  <img src="box2.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h3 class="card-title">Kavya & Arjun</h3>
+    <p class="card-text"><b><i>WEDDING DATE:24th Mrach,2022</i></b></p>
+    <p class="card-text">"Finding a life partner felt diffficult until we joined VivahSetu. The experience was safe,smooth,and successful.Thank yoy team VivahSetu!".</p>
+  </div>
+  </div>
+   <div class="card" style="width:15rem;">
+  <img src="box1.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h3 class="card-title">Kavya & Arjun</h3>
+    <p class="card-text"><b><i>WEDDING DATE:24th Mrach,2022</i></b></p>
+    <p class="card-text">"Finding a life partner felt diffficult until we joined VivahSetu. The experience was safe,smooth,and successful.Thank yoy team VivahSetu!".</p>
+  </div>
+  </div>
+    <div class="card" style="width:15rem;">
+  <img src="box5.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h3 class="card-title">Kavya & Arjun</h3>
+    <p class="card-text"><b><i>WEDDING DATE:24th Mrach,2022</i></b></p>
+    <p class="card-text">"Finding a life partner felt diffficult until we joined VivahSetu. The experience was safe,smooth,and successful.Thank yoy team VivahSetu!".</p>
+  </div>
+  </div>
+  <div class="card" style="width:15rem;">
+  <img src="box8.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h3 class="card-title">Kavya & Arjun</h3>
+    <p class="card-text"><b><i>WEDDING DATE:24th Mrach,2022</i></b></p>
+    <p class="card-text">"Finding a life partner felt diffficult until we joined VivahSetu. The experience was safe,smooth,and successful.Thank yoy team VivahSetu!".</p>
+  </div>
+  </div>
+
+ <div class="card" style="width:15rem;">
+  <img src="box7.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h3 class="card-title">Kavya & Arjun</h3>
+    <p class="card-text"><b><i>WEDDING DATE:24th Mrach,2022</i></b></p>
+    <p class="card-text">"Finding a life partner felt diffficult until we joined VivahSetu. The experience was safe,smooth,and successful.Thank yoy team VivahSetu!".</p>
+  </div>
+  </div>
+   <div class="card" style="width:15rem;">
+  <img src="wed2.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h3 class="card-title">Kavya & Arjun</h3>
+    <p class="card-text"><b><i>WEDDING DATE:24th Mrach,2022</i></b></p>
+    <p class="card-text">"Finding a life partner felt diffficult until we joined VivahSetu. The experience was safe,smooth,and successful.Thank yoy team VivahSetu!".</p>
+  </div>
+  </div>
+    <div class="card" style="width:15rem;">
+  <img src="box4.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h3 class="card-title">Kavya & Arjun</h3>
+    <p class="card-text"><b><i>WEDDING DATE:24th Mrach,2022</i></b></p>
+    <p class="card-text">"Finding a life partner felt diffficult until we joined VivahSetu. The experience was safe,smooth,and successful.Thank yoy team VivahSetu!".</p>
+  </div>
+  </div>
+  <div class="card" style="width:15rem;">
+  <img src="box6.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h3 class="card-title">Kavya & Arjun</h3>
+    <p class="card-text"><b><i>WEDDING DATE:24th Mrach,2022</i></b></p>
+    <p class="card-text">"Finding a life partner felt diffficult until we joined VivahSetu. The experience was safe,smooth,and successful.Thank yoy team VivahSetu!".</p>
+  </div>
+  </div>
+   <div class="card" style="width:15rem;">
+  <img src="wed22.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h3 class="card-title">Kavya & Arjun</h3>
+    <p class="card-text"><b><i>WEDDING DATE:24th Mrach,2022</i></b></p>
+    <p class="card-text">"Finding a life partner felt diffficult until we joined VivahSetu. The experience was safe,smooth,and successful.Thank yoy team VivahSetu!".</p>
+  </div>
+  </div>
+  <div class="card" style="width:15rem;">
+  <img src="lotus.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h3 class="card-title">Kavya & Arjun</h3>
+    <p class="card-text"><b><i>WEDDING DATE:24th Mrach,2022</i></b></p>
+    <p class="card-text">"Finding a life partner felt diffficult until we joined VivahSetu. The experience was safe,smooth,and successful.Thank yoy team VivahSetu!".</p>
+  </div>
+  </div>
+
+</div>
+</div>
+</div>
+</body>
+</html>

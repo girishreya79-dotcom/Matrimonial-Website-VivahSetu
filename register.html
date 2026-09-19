@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mobile Shop - Bootstrap Grid</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .carousel-item {
+            height: 80vh;
+            background: transparent;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .profile-slider .carousel-item {
+            height: 700px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f5f5f5;
+        }
+
+        .profile-slider .carousel-item img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+    </style>
+</head>
+
+<body>
+
+   <!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger p-0">
+  <div class="container-fluid">
+<a class="navbar-brand text-light" href="#">VivahSetu🤍 </a>
+    <button class="navbar-toggler" type="button text-dark" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="adminlogin.html">Admin</a>
+        </li>
+
+         <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle text-light" href="service.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Service</a>
+     <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="service.html">Features</a></li>
+
+    <li><a class="dropdown-item" href="#">Membership Options</a></li>
+    <li><a class="dropdown-item" href="#">VivahSetu Premier</a></li>
+    </ul>
+</li>
+
+        <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Explore
+    
+  </a>
+  <ul class="dropdown-menu text-dark">
+    <li><a class="dropdown-item" href="privacy.html">Privacy policy</a></li>
+    <li><a class="dropdown-item" href="terms.html">Terms of use</a></li>
+      </ul>
+</li>
+</ul>
+              <div class="d-flex align-items-center gap-2">
+
+        
+        <a href="loginform.html" class="btn text-light btn-outline-secondary btn-sm">Log-in</a>
+        <a href="register.html" class="btn text-light btn-outline-secondary btn-sm">Register</a>
+
+      </div>
+    </div>
+  </div>
+</nav>
+ 
+
+    <!-- Registration Form -->
+    <form action="register.php" method="post" enctype="multipart/form-data">
+
+        <div class="container mt-5 mb-5">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+
+                    <div class="card shadow-lg p-4 rounded-4">
+                        <h3 class="text-center text-danger mb-4">
+                            <i>Basic Personal Information</i>
+                        </h3>
+
+                        <div class="row">
+
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Full Name</label>
+                                <input type="text" name="nm1" class="form-control" required>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Email</label>
+                                <input type="email" name="nm2" class="form-control" required>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Password</label>
+                                <input type="password" name="nm3" class="form-control" required>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Age</label>
+                                <input type="text" name="nm4" class="form-control" required>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Contact Number</label>
+                                <input type="text" name="nm5" class="form-control" required>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">City</label>
+                                <input type="text" name="nm7" class="form-control" required>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">State</label>
+                                <input type="text" name="nm8" class="form-control" required>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">DOB</label>
+                                <input type="date" name="nm10" class="form-control" required>
+                            </div>
+
+                            <div class="col-12 mb-3">
+                                <label class="form-label">Address</label>
+                                <input type="text" name="nm6" class="form-control" required>
+                            </div>
+
+                            <div class="col-12 mb-3">
+                                <label class="form-label d-block">Gender</label>
+
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="nm9" class="form-check-input" value="Male">
+                                    <label class="form-check-label">Male</label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="nm9" class="form-check-input" value="Female">
+                                    <label class="form-check-label">Female</label>
+                                </div>
+                            </div>
+
+                            <div class="col-12 text-center">
+                                <button class="btn btn-danger px-5 rounded-pill">Submit</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </form>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

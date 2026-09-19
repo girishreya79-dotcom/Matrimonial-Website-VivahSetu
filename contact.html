@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mobile Shop - Bootstrap Grid</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  .carousel-item {
+    height: 80vh;
+    background: transparent; /* no black bars */
+  }
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* fills screen */
+    object-position: center;
+  }
+.profile-slider .carousel-item {
+  height:700px;                 /* not full screen */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f5;           /* light background instead of black */
+}
+
+.profile-slider .carousel-item img {
+  max-width: 100%;
+  max-height: 100%;
+  
+  object-fit: contain;           /* show full photo */
+}
+
+</style>
+
+</head>
+<body>
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger p-0">
+  <div class="container-fluid">
+<a class="navbar-brand text-light" href="#">VivahSetu🤍 </a>
+    <button class="navbar-toggler" type="button text-dark" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="adminlogin.html">Admin</a>
+        </li>
+
+         <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle text-light" href="service.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Service</a>
+     <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="service.html">Features</a></li>
+
+    <li><a class="dropdown-item" href="#">Membership Options</a></li>
+    <li><a class="dropdown-item" href="#">VivahSetu Premier</a></li>
+    </ul>
+</li>
+
+        <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Explore
+    
+  </a>
+  <ul class="dropdown-menu text-dark">
+    <li><a class="dropdown-item" href="privacy.html">Privacy policy</a></li>
+    <li><a class="dropdown-item" href="terms.html">Terms of use</a></li>
+      </ul>
+</li>
+</ul>
+              <div class="d-flex align-items-center gap-2">
+
+        
+        <a href="loginform.html" class="btn text-light btn-outline-secondary btn-sm">Log-in</a>
+        <a href="register.html" class="btn text-light btn-outline-secondary btn-sm">Register</a>
+
+      </div>
+    </div>
+  </div>
+</nav>
+
+<body>
+<!-- Contact Section -->
+<section class="container my-5">
+  <h1 class="text-center mb-4">Contact Us</h1>
+  <p class="text-center mb-5">Have questions or suggestions? Reach out to us and we'll be happy to help!</p>
+
+  <div class="row">
+    
+    <!-- Contact Form -->
+    <div class="col-md-6">
+      <div class="card shadow-sm p-4">
+        <h5 class="mb-3">Send a Message</h5>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+          </div>
+          <div class="mb-3">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" class="form-control" id="subject" placeholder="Enter subject" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Type your message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Send Message</button>
+        </form>
+      </div>
+    </div>
+    
+    <!-- Contact Info -->
+    <div class="col-md-6">
+      <div class="card shadow-sm p-4">
+        <h5 class="mb-3">Get in Touch</h5>
+        <p><strong>Email:</strong> support@vivahsetu.com</p>
+        <p><strong>Phone:</strong> +91 98765 43210</p>
+        <p><strong>Address:</strong> VivahSetu Pvt Ltd, Ranchi, Jharkhand, India</p>
+        <hr>
+        <h6>Follow Us</h6>
+        <p>
+          <a href="#" class="me-3 text-decoration-none">Facebook</a>
+          <a href="#" class="me-3 text-decoration-none">Instagram</a>
+          <a href="#" class="text-decoration-none">LinkedIn</a>
+        </p>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

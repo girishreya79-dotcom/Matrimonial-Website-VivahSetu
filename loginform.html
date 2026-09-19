@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VivahSetu - Login</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body{
+  background: linear-gradient(to right, #ffe6eb, #fff5f7);
+}
+
+.login-card{
+  max-width: 420px;
+  margin: auto;
+  margin-top: 80px;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.google-btn{
+  background-color: white;
+  border: 1px solid #ddd;
+}
+
+.google-btn:hover{
+  background-color: #f8f9fa;
+}
+</style>
+</head>
+
+<body>
+<body>
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger p-0">
+  <div class="container-fluid">
+<a class="navbar-brand text-light" href="#">VivahSetu🤍 </a>
+    <button class="navbar-toggler" type="button text-dark" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="adminlogin.html">Admin</a>
+        </li>
+
+         <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle text-light" href="service.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Service</a>
+     <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="service.html">Features</a></li>
+
+    <li><a class="dropdown-item" href="#">Membership Options</a></li>
+    <li><a class="dropdown-item" href="#">VivahSetu Premier</a></li>
+    </ul>
+</li>
+
+        <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Explore
+    
+  </a>
+  <ul class="dropdown-menu text-dark">
+    <li><a class="dropdown-item" href="privacy.html">Privacy policy</a></li>
+    <li><a class="dropdown-item" href="terms.html">Terms of use</a></li>
+      </ul>
+</li>
+</ul>
+              <div class="d-flex align-items-center gap-2">
+
+        
+        <a href="loginform.html" class="btn text-light btn-outline-secondary btn-sm">Log-in</a>
+        <a href="register.html" class="btn text-light btn-outline-secondary btn-sm">Register</a>
+
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Login Card -->
+<div class="container mb-4">
+  <div class="card login-card">
+
+    <h3 class="text-center mb-2">User Login</h3>
+
+    <form action="loginform.php" method="post">
+      
+      <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input type="email" name="nm1" class="form-control" required>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Password</label>
+        <input type="password" name="nm2" class="form-control" required>
+      </div>
+
+      <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox">
+        <label class="form-check-label">Remember me</label>
+      </div>
+
+      <button type="submit" class="btn btn-danger w-100 mb-3">Login</button>
+
+      <div class="text-center mb-3">OR</div>
+
+      <!-- Login with Google -->
+      <button type="button" class="btn google-btn w-100 d-flex align-items-center justify-content-center gap-2">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" width="20">
+        Login with Google
+      </button>
+
+      <div class="text-center mt-3">
+        Not registered? <a href="register.html">Register now</a>
+      </div>
+
+    </form>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
